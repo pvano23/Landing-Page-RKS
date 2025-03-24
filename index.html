@@ -95,15 +95,7 @@
             height: 90px;
             width: auto;
         }
-        
-       img a {
-            position: absolute;
-            bottom: 140px;
-            left: 30px;
-            height: 90px;
-            width: auto;
-        }
-        
+      
         .since {
             position: absolute;
             top: 190px;
@@ -137,12 +129,14 @@
         }
       
         .body-text {
-            display: flex; /* Enable flexbox for body-text */
-            flex-direction: column; /* Align elements vertically */
-            align-items: flex-start; /* Align items at the start */
-            margin-top: 75px; /* Moves headings up or down */
-            margin-right: 500px; 
-        }
+    display: flex; /* Enable flexbox for body-text */
+    flex-direction: column; /* Align elements vertically */
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 75px; /* Moves headings up or down */
+    margin-left: 0; /* Remove right margin */
+    margin-right: auto; /* Align to the left */
+    padding-left: 20px; /* Add padding to align with SINCE 2024 logo */
+}
         
         .heading-row {
             display: flex; /* Use flexbox for the row */
@@ -208,18 +202,18 @@
     }
 
     .learn-more {
-    font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
-    color: black; /* Text color */
-    text-align: left; /* Align text to the right */
+        font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
+        color: black; /* Text color */
+        text-align: left; /* Align text to the right */
 }
 
-h6 {
-    font-family: 'Didact Gothic', serif;
-    color: black;
-    font-size: 28px;
-    margin-top: 10px; /* Reduce space above h6 to move it up */
-    margin-left: 1100px; /* Keep this value as needed */
-}
+    h6 {
+        font-family: 'Didact Gothic', serif;
+        color: black;
+        font-size: 28px;
+        margin-top: 10px; /* Reduce space above h6 to move it up */
+        margin-left: 1100px; /* Keep this value as needed */
+    }
         .x {
             position: absolute;
             top: 80px; 
@@ -250,6 +244,8 @@ h6 {
         <div class="navbar">
             <ul>
                 <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="logo-image">
+              
+              
               
                 <img src="SINCE 2024.png" alt="Identifying when the organization was established" class="since">
               
@@ -290,6 +286,9 @@ h6 {
          
         <h6>LEARN MORE</h6>
     </div>
+       
+      <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="bottom-logo">
+      
   </div>
   
 </body>
