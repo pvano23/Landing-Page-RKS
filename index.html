@@ -129,14 +129,13 @@
         }
       
         .body-text {
-    display: flex; /* Enable flexbox for body-text */
-    flex-direction: column; /* Align elements vertically */
-    align-items: flex-start; /* Align items at the start */
-    margin-top: 75px; /* Moves headings up or down */
-    margin-left: 0; /* Remove right margin */
-    margin-right: auto; /* Align to the left */
-    padding-left: 20px; /* Add padding to align with SINCE 2024 logo */
-}
+            display: flex; /* Enable flexbox for body-text */
+            flex-direction: column; /* Align elements vertically */
+            align-items: flex-start; /* Align items at the start */
+            margin-top: 75px; /* Moves headings up or down */
+            margin-left: 20px; /* Adjust this value to align with SINCE 2024 logo */
+            margin-right: 500px; /* Keep right margin as needed */
+        }
         
         .heading-row {
             display: flex; /* Use flexbox for the row */
@@ -158,7 +157,7 @@
             margin: 10px; /* Margin for h4 */
         }
       
-       h5 {
+        h5 {
             font-family: 'Didact Gothic', serif;
             color: black;
             font-size: 28px;
@@ -166,54 +165,55 @@
             align-self: flex-start; /* Align h5 with left */
         }
         
-      
-      .h5-container {
-          position: relative; /* Position relative for pseudo-elements */
-          margin: 10px 0 80px 10px; /* Adjust margin */
+        .h5-container {
+            position: relative; /* Position relative for pseudo-elements */
+            margin: 10px 0 80px 10px; /* Adjust margin */
         }
 
-     .h5-container::before,
-     .h5-container::after {
-      content: ''; /* Create empty content for lines */
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 2px; /* Height of the lines */
-      background-color: black; /* Color of the lines */
-      transition: opacity 0.3s; /* Smooth transition for opacity */
-      }
+        .h5-container::before,
+        .h5-container::after {
+            content: ''; /* Create empty content for lines */
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px; /* Height of the lines */
+            background-color: black; /* Color of the lines */
+            transition: opacity 0.3s; /* Smooth transition for opacity */
+        }
 
-    .h5-container::before {
-      top: 0px; /* Adjust this value to move the top line closer to the text */
-}
+        .h5-container::before {
+            top: 0px; /* Adjust this value to move the top line closer to the text */
+        }
 
-    .h5-container::after {
-      bottom: 0px; /* Move the bottom line up more */
-}
-    .h5-container:hover::before,
-    .h5-container:hover::after {
-        opacity: 0;
-    }
+        .h5-container::after {
+            bottom: 0px; /* Move the bottom line up more */
+        }
 
-    .h5-container:hover h5 {
-        background-color: gold; 
-        color: black; /* Change text color if needed */
-        padding: 10px; /* Add padding for the background */
-    }
+        .h5-container:hover::before,
+        .h5-container:hover::after {
+            opacity: 0;
+        }
 
-    .learn-more {
-        font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
-        color: black; /* Text color */
-        text-align: left; /* Align text to the right */
-}
+        .h5-container:hover h5 {
+            background-color: gold; 
+            color: black; /* Change text color if needed */
+            padding: 10px; /* Add padding for the background */
+        }
 
-    h6 {
-        font-family: 'Didact Gothic', serif;
-        color: black;
-        font-size: 28px;
-        margin-top: 10px; /* Reduce space above h6 to move it up */
-        margin-left: 1100px; /* Keep this value as needed */
-    }
+        .learn-more {
+            font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
+            color: black; /* Text color */
+            text-align: left; /* Align text to the right */
+        }
+
+        h6 {
+            font-family: 'Didact Gothic', serif;
+            color: black;
+            font-size: 28px;
+            margin-top: 10px; /* Reduce space above h6 to move it up */
+            margin-left: 1100px; /* Keep this value as needed */
+        }
+        
         .x {
             position: absolute;
             top: 80px; 
@@ -228,6 +228,15 @@
             left: 1380px;
             height: 40px;
             width: auto;
+        }
+        
+        .bottom-logo {
+            position: absolute;
+            bottom: -680px;
+            left: 22%; /* Center horizontally */
+            transform: translateX(-50%); /* Center the logo */
+            height: 90px; /* Height of the logo */
+            width: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -244,11 +253,7 @@
         <div class="navbar">
             <ul>
                 <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="logo-image">
-              
-              
-              
                 <img src="SINCE 2024.png" alt="Identifying when the organization was established" class="since">
-              
                 <li><a href="#home">HOME</a></li>
                 <li class="dropdown">
                     <a href="#prospectsboard" class="dropbtn">PROSPECTS BOARD</a>
@@ -281,15 +286,14 @@
             <h4>SCOUTING</h4>
         </div>
       
-       <div class="h5-container">
-        <h5>I am committed to helping you achieve your athletic goals. I offer scouting services with detailed film evaluations using my advanced NFL-level grading scale to assess your skills. This scouting service is designed to highlight your value to coaches and help them filter through potential recruits. </h5>
-         
-        <h6>LEARN MORE</h6>
+        <div class="h5-container">
+            <h5>I am committed to helping you achieve your athletic goals. I offer scouting services with detailed film evaluations using my advanced NFL-level grading scale to assess your skills. This scouting service is designed to highlight your value to coaches and help them filter through potential recruits. </h5>
+             
+            <h6>LEARN MORE</h6>
+        </div>
+          
+        <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="bottom-logo">
     </div>
-       
-      <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="bottom-logo">
-      
-  </div>
   
 </body>
 </html>
