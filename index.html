@@ -168,11 +168,12 @@
         }
         
        .h5-container {
-          position: relative; /* Position relative for pseudo-elements */
-          margin: 10px 0 80px 0; /* Adjust margin */
-          margin-left: 200px; 
-         width: 110%;
-      }
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start; /* Align text to the left */
+            position: relative;
+            width: 110%;
+        }
 
         .h5-container::before,
         .h5-container::after {
@@ -209,14 +210,18 @@
             color: black; /* Text color */
             text-align: right; /* Align text to the right */
         }
-
-        h6 {
+      
+      h6 {
           font-family: 'Didact Gothic', serif;
           color: black;
           font-size: 26px;
-          margin-left: 800px; /* Increase this value to move "LEARN MORE" to the right */
+          margin-left: auto; /* Pushes text to the right */
+          align-self: flex-end; /* Align to the right */
+          margin-top: 10px; /* Adjust spacing */
       }
-        
+      
+      
+      
         .x {
             position: absolute;
             top: 80px; 
