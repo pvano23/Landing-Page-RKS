@@ -4,20 +4,20 @@
     <title>Landing Page RKS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:400,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:400,700,900|Didact Gothic" rel="stylesheet"> 
     
     <style>
         body {
             margin: 0;
-            height: 300vh;
-            display: flex; /* Enable flexbox */
+            height: 175vh;
+            display: flex; /* Enable flexbox */ 
             flex-direction: column;
             align-items: center;
         }
         .container { /* Rectangle */
             width: 80%;
-            height: 10%;
-            border: 2px solid black; 
+            height: 17.5%;
+            border: 3px solid black; 
             position: relative;
             display: flex;
             margin-top: 2%; 
@@ -90,15 +90,23 @@
         
         img {
             position: absolute;
-            bottom: 150px;
-            left: 3px;
-            height: 80px;
+            bottom: 140px;
+            left: 30px;
+            height: 90px;
+            width: auto;
+        }
+        
+       img a {
+            position: absolute;
+            bottom: 140px;
+            left: 30px;
+            height: 90px;
             width: auto;
         }
         
         .since {
             position: absolute;
-            top: 200px;
+            top: 190px;
             left: 0; 
             height: 300px;
             width: auto; 
@@ -156,14 +164,62 @@
             margin: 10px; /* Margin for h4 */
         }
       
-        h5 {
-            font-family: 'Roboto', serif;
+       h5 {
+            font-family: 'Didact Gothic', serif;
             color: black;
-            font-size: 22px;
+            font-size: 28px;
             margin: 10px 0 80px 10px; /* Adjust margin to align with previous headings */
             align-self: flex-start; /* Align h5 with left */
         }
         
+      
+      .h5-container {
+          position: relative; /* Position relative for pseudo-elements */
+          margin: 10px 0 80px 10px; /* Adjust margin */
+        }
+
+     .h5-container::before,
+     .h5-container::after {
+      content: ''; /* Create empty content for lines */
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px; /* Height of the lines */
+      background-color: black; /* Color of the lines */
+      transition: opacity 0.3s; /* Smooth transition for opacity */
+      }
+
+    .h5-container::before {
+      top: 0px; /* Adjust this value to move the top line closer to the text */
+}
+
+    .h5-container::after {
+      bottom: 0px; /* Move the bottom line up more */
+}
+    .h5-container:hover::before,
+    .h5-container:hover::after {
+        opacity: 0;
+    }
+
+    .h5-container:hover h5 {
+        background-color: gold; 
+        color: black; /* Change text color if needed */
+        padding: 10px; /* Add padding for the background */
+    }
+
+    .learn-more {
+    font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
+    color: black; /* Text color */
+    text-align: left; /* Align text to the right */
+}
+
+h6 {
+    font-family: 'Didact Gothic', serif;
+    color: black;
+    font-size: 28px;
+    margin-top: 10px; /* Reduce space above h6 to move it up */
+    margin-left: 1100px; /* Keep this value as needed */
+}
         .x {
             position: absolute;
             top: 80px; 
@@ -194,7 +250,9 @@
         <div class="navbar">
             <ul>
                 <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="logo-image">
+              
                 <img src="SINCE 2024.png" alt="Identifying when the organization was established" class="since">
+              
                 <li><a href="#home">HOME</a></li>
                 <li class="dropdown">
                     <a href="#prospectsboard" class="dropbtn">PROSPECTS BOARD</a>
@@ -211,7 +269,7 @@
                         <a href="#toprankings">Top Rankings</a>
                     </div>
                 </li>
-                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#aboutus">ABOUT ME</a></li>
             </ul>
         </div>
     </div>
@@ -226,8 +284,13 @@
             <h3>ABOUT REN KOK</h3>
             <h4>SCOUTING</h4>
         </div>
-        <h5>I offer detailed film evaluations using my advanced NFL-level grading scale to assess your skills....</h5>
-    </div>
       
+       <div class="h5-container">
+        <h5>I am committed to helping you achieve your athletic goals. I offer scouting services with detailed film evaluations using my advanced NFL-level grading scale to assess your skills. This scouting service is designed to highlight your value to coaches and help them filter through potential recruits. </h5>
+         
+        <h6>LEARN MORE</h6>
+    </div>
+  </div>
+  
 </body>
 </html>
