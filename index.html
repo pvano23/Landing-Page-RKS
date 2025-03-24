@@ -130,31 +130,38 @@
       
         .body-text {
             display: flex; /* Enable flexbox for body-text */
-            align-items: center; /* Center items vertically */
-            margin-top: 75px; /* Moves h3 up or down */
+            flex-direction: column; /* Align elements vertically */
+            align-items: flex-start; /* Align items at the start */
+            margin-top: 75px; /* Moves headings up or down */
             margin-right: 500px; 
+        }
+        
+        .heading-row {
+            display: flex; /* Use flexbox for the row */
+            align-items: center; /* Center items vertically */
         }
         
         h3 {
             font-family: 'Roboto', serif;
             color: black;
             font-size: 62px;
-            margin: 10px;
+            margin: 10px; /* Margin for h3 */
         }
       
         h4 {
             font-family: 'Oswald', serif;
             font-weight: 900;
             color: black;
-            font-size: 62px;
-            margin: 10px;
+            font-size: 60px;
+            margin: 10px; /* Margin for h4 */
         }
       
         h5 {
             font-family: 'Roboto', serif;
             color: black;
             font-size: 22px;
-            margin: 80px;
+            margin: 10px 0 80px 10px; /* Adjust margin to align with previous headings */
+            align-self: flex-start; /* Align h5 with left */
         }
         
         .x {
@@ -214,12 +221,13 @@
         <h2><i>Scouting high school football players <br> with NFL level evaluations</i></h2>
     </div>
 
-    <div class="body-text">
-        <h3>ABOUT REN KOK</h3>
-        <h4>SCOUTING</h4>
+    <div class="body-text"> 
+        <div class="heading-row">
+            <h3>ABOUT REN KOK</h3>
+            <h4>SCOUTING</h4>
+        </div>
+        <h5>I offer detailed film evaluations using my advanced NFL-level grading scale to assess your skills....</h5>
     </div>
-  
-    <h5>I offer detailed film evaluations using my advanced NFL-level grading scale to assess your skills....</h5>
       
 </body>
 </html>
