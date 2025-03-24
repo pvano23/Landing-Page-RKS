@@ -255,7 +255,7 @@
       
       .contact-us {
           position: absolute;
-          bottom: -180px; /* Matches bottom logo position */
+          bottom: -175px; /* Matches bottom logo position */
           left: 475px; /* Matches bottom logo alignment */
           font-family: 'Didact Gothic', serif;
           color: black;
@@ -276,7 +276,22 @@
       .contact-us span,
       .connect span {
           font-size: 18px; /* Make Mail, Instagram, and X smaller */
+         
       }
+      
+      .contact-us a,
+      .connect a {
+          text-decoration: none; /* Remove underline */
+          color: black; /* Keep links always black */
+          font-weight: bold;
+          transition: border-bottom 0.3s ease-in-out;
+      }
+
+      .contact-us a:hover,
+      .connect a:hover {
+         color: gold; /* Subtle underline on hover */
+      }
+
 
     </style>
 </head>
@@ -332,9 +347,18 @@
             <h6>LEARN MORE</h6>
           
           
-            <p class="contact-us">CONTACT US <br> <span>Mail: renkokscouting@gmail.com</span></p>
-
-            <p class="connect">CONNECT <br> <span>Instagram<br>X</span></p>
+            <p class="contact-us">
+              CONTACT US <br>
+              <span><a href="mailto:renkokscouting@gmail.com" target="_self" style="text-decoration:none">renkokscouting@gmail.com</a></span>
+          </p>
+ 
+          <p class="connect"> 
+              CONNECT <br>
+              <span>
+                  <a href="https://www.instagram.com/renkokscouting/" target="_blank" style="text-decoration:none">Instagram</a><br>
+                  <a href="https://x.com/renkokscouting?lang=en" style="text-decoration:none" target="_blank">X</a>
+              </span>
+          </p>
 
   
         </div>
