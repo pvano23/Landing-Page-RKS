@@ -165,10 +165,11 @@
             align-self: flex-start; /* Align h5 with left */
         }
         
-        .h5-container {
-            position: relative; /* Position relative for pseudo-elements */
-            margin: 10px 0 80px 10px; /* Adjust margin */
-        }
+       .h5-container {
+          position: relative; /* Position relative for pseudo-elements */
+          margin: 10px 0 80px 0; /* Adjust margin-left to align with SINCE 2024 */
+          margin-left: 200px; /* Adjust this value to align with SINCE 2024 */
+      }
 
         .h5-container::before,
         .h5-container::after {
@@ -209,9 +210,9 @@
         h6 {
             font-family: 'Didact Gothic', serif;
             color: black;
-            font-size: 28px;
+            font-size: 26px;
             margin-top: 10px; /* Reduce space above h6 to move it up */
-            margin-left: 20px; /* Adjust this value to shift "LEARN MORE" to the right */
+            margin-left: 900px; /* Keep this vlue as needed */
         }
         
         .x {
@@ -233,7 +234,7 @@
         .bottom-logo {
             position: absolute;
             bottom: -680px;
-            left: 20%; /* Center horizontally */
+            left: %; /* Center horizontally */
             transform: translateX(-50%); /* Center the logo */
             height: 90px; /* Height of the logo */
             width: auto; /* Maintain aspect ratio */
