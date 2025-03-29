@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+   <!---created by Paige Van Overberghe on March 22---> 
+  
     <title>Landing Page RKS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,51 +183,57 @@
             align-self: flex-start; /* Align h5 with left */
         }
        
-      .h5-container {
-        display: flex; 
-        flex-direction: column; 
-        align-items: flex-start;
-        position: relative;
-        width: 110%;
-        margin-left: 180px; /* Adjust this value to shift it further right */
-    }
+        .h5-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    position: relative;
+    width: 110%;
+    margin-left: 180px; /* Adjust this value to shift it further right */
+}
 
+.h5-container h5 {
+    font-weight: normal;
+    font-family: 'Didact Gothic', serif;
+    color: black;
+    font-size: 32px;
+    margin: 12px 0; /* Keep margins consistent */
+    padding: 10px; /* Add padding for space around text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
 
-        .h5-container::before,
-        .h5-container::after {
-            content: ''; /* Create empty content for lines */
-            position: absolute;
-            left: 0;
-            right: 0;
-            height: 2px; /* Height of the lines */
-            background-color: black; /* Color of the lines */
-            transition: opacity 0.3s; /* Smooth transition for opacity */
-        }
+/* Apply hover effect only when hovering over the h5 element */
+.h5-container:hover h5 {
+    background-color: gold; 
+    color: black; /* Change text color if needed */
+}
 
-        .h5-container::before {
-            top: 0px; /* Adjust this value to move the top line closer to the text */
-        }
+/* Lines above and below the h5 */
+.h5-container::before,
+.h5-container::after {
+    content: ''; /* Create empty content for lines */
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Height of the lines */
+    background-color: black; /* Color of the lines */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
 
-        .h5-container::after {
-            bottom: 0px; /* Move the bottom line up more */
-        }
+.h5-container::before {
+    top: 0px; /* Position the top line */
+}
 
-        .h5-container:hover::before,
-        .h5-container:hover::after {
-            opacity: 0;
-        }
+.h5-container::after {
+    bottom: 0px; /* Position the bottom line */
+}
 
-        .h5-container:hover h5 {
-            background-color: gold; 
-            color: black; /* Change text color if needed */
-            padding: 10px; /* Add padding for the background */
-        }
-
-        .learn-more {
-            font-family: 'Didact Gothic', sans-serif; /* Use Didact Gothic font */
-            color: black; /* Text color */
-            text-align: right; /* Align text to the right */
-        }
+.h5-container:hover::before,
+.h5-container:hover::after {
+    opacity: 0; /* Fade out lines on hover */
+}
+      
       h6 {
           font-family: 'Didact Gothic', serif;
           color: black;
