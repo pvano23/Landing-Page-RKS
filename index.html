@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   
-   <!---created by Paige Van Overberghe on March 29---> 
+   <!---created by Paige Van Overberghe on March 22---> 
   
-    <title>About Us</title>
+    <title>Landing Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:400,700,900|Didact Gothic" rel="stylesheet"> 
@@ -12,7 +12,7 @@
     <style>
          body {
             margin: 0;
-            height: 180vh;
+            height: 200vh;
             display: flex; /* Enable flexbox */ 
             flex-direction: column;
             align-items: center;
@@ -30,7 +30,7 @@
         
         .navbar {
             width: 100%; /* Make navbar full width */
-            height: 30%;
+            height: 28%;
             background-color: black; 
             position: absolute; 
             bottom: 0;
@@ -47,7 +47,7 @@
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             color: white; 
-            padding: 25px 50px;
+            padding: 28px 50px;
             text-decoration: none;
             transition: background-color 0.2s;
         }
@@ -109,13 +109,12 @@
            left: 775px;
             
         }
-        .coaching {
+        .since {
             position: absolute;
             top: 215px;
-            left: 80px; 
-            height: 325px;
+            left: 100px; 
+            height: 250px;
             width: auto; 
-         border-radius: 10%;
         }
         
         .title-text {
@@ -151,48 +150,58 @@
             margin-right: 500px; /* Keep right margin as needed */
         }
         
-       
-       
-      
-       h3 {
-            font-family: 'Oswald', serif;
+        .heading-row {
+            display: flex; /* Use flexbox for the row */
+            align-items: center; /* Center items vertically */
+            margin-left: 200px; /* Align with the h5 container */
+        }
+        
+        h3 {
+            font-family: 'Roboto', serif;
             color: black;
-            font-size: 32px;
-            margin: 40px; 
-            margin-left: 5px;
+            font-size: 56px;
+            margin: 10px; 
           
         }
       
-       p, ul {
-        font-family: 'Roboto', sans-serif; /* Change to your desired font */
-        font-size: 20px;
-        margin-top: -30px;
-        color: black;  
-    }
-
+        h4 {
+            font-family: 'Oswald', serif;
+            font-weight: 900;
+            color: black;
+            font-size: 56px;
+            margin: 10px; 
+            margin-left: 10px
+           
+        }
+      
+        h5 {
+            font-weight: normal;
+          font-family: 'Didact Gothic', serif;
+            color: black;
+            font-size: 32px;
+            margin: 12px 0 80px 10px; /* Adjust margin to align with previous headings */
+            align-self: flex-start; /* Align h5 with left */
+        }
        
         .h5-container {
-          display: flex; 
-          flex-direction: column; 
-          align-items: flex-start;
-          width: 110%;
-          margin-left: 180px;
-         margin-top: 10px;
-        position: relative;
-       top: 40px;
-      }
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    position: relative;
+    width: 110%;
+    margin-left: 180px; /* Adjust this value to shift it further right */
+}
 
-        .h5-container h5 {
-        font-weight: normal;
-        font-family: 'Didact Gothic', serif;
-        color: black;
-        font-size: 22px;
-        line-height: 1.4;
-        margin-bottom: 90px; /* Move the text up by adjusting this value */
-        padding: 5px;
-        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-        box-sizing: border-box; /* Ensure padding is included in width/height calculations */
-    }
+.h5-container h5 {
+    font-weight: normal;
+    font-family: 'Didact Gothic', serif;
+    color: black;
+    font-size: 32px;
+    margin: 12px 0; /* Keep margins consistent */
+    padding: 10px; /* Add padding for space around text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
 
 /* Apply hover effect only when hovering over the h5 element */
         .h5-container:hover h5 {
@@ -213,11 +222,11 @@
         }
 
         .h5-container::before {
-            top: 10px; /* Position the top line */
+            top: 0px; /* Position the top line */
         }
 
         .h5-container::after {
-            bottom: 50px; /* Position the bottom line */
+            bottom: 0px; /* Position the bottom line */
         }
 
         .h5-container:hover::before,
@@ -253,7 +262,7 @@
         
         .bottom-logo {
             position: absolute;
-            bottom: -620px;
+            bottom: -760px;
             left: 240px; /* Adjust this value to position it horizontally as needed */
             height: 70px; /* Height of the logo */
             width: auto; 
@@ -261,7 +270,7 @@
       
       .contact-us {
           position: absolute;
-          bottom: -225px; /* Matches bottom logo position */
+          bottom: -170px; /* Matches bottom logo position */
           left: 475px; /* Matches bottom logo alignment */
           font-family: 'Didact Gothic', serif;
           color: black;
@@ -271,7 +280,7 @@
       
       .connect {
           position: absolute;
-          bottom: -260px; /* Matches bottom logo position */
+          bottom: -200px; /* Matches bottom logo position */
           left: 900px; /* Matches bottom logo alignment */
           font-family: 'Didact Gothic', serif;
           color: black;
@@ -317,8 +326,7 @@
                  
               <img src="RKS Laptop.png" alt="RKS Laptop" class="laptop-image"> 
               
-                <img src="Ren Coaching.png" alt="Ren Kok speaking to a player on football field" class="coaching">
-              
+                <img src="SINCE 2024.png" alt="Identifying when the organization was established" class="since">
                 <li><a href="#home">HOME</a></li>
                 <li class="dropdown">
                     <a href="#prospectsboard" class="dropbtn">PROFILES</a>
@@ -341,28 +349,20 @@
     </div>
     
     <div class="title-text">
-        <h1>WHO AM I?</h1>
-        <h2><i>HELLO! MY NAME IS REN KOK </i></h2>
-        <h3>MY EXPERIENCE</h3>
-      
-     
-        
-       <p class="experience">
-          <ul>
-         <li>Scouting Academy Graduate</li>
-        <li>Former special teams coach with the Cambridge Lions</li>
-        <li>Former high school QB/WR coach</li>
-      </ul>  </p>
-      
+        <h1>GET YOUR FILM SEEN <br>FASTER:</h1>
+        <h2><i>Scouting high school football players <br> with NFL level evaluations</i></h2>
     </div>
 
     <div class="body-text"> 
-        
+        <div class="heading-row">
+            <h3>ABOUT REN KOK</h3>
+            <h4>SCOUTING</h4>
+        </div>
+      
         <div class="h5-container">
-            <h5>My ultimate goal is to become a professional football scout. As part of that journey, I focus on scouting high school football players. I've been mentored by former NFL scouts and continue to learn from coaches at all levels to sharpen my skills. 
-            In addition to scouting, I have experience as a high school coach, having worked with quarterbacks and kickers/punters, including developing a recent OSFL All-Star kicker. I keep my costs low for athletes because I believe in supporting their journey without breaking the bank. I have my own goals to reach, and I'm committed to helping others achieve theirs along the way!  </h5> 
+            <h5>I am committed to helping you achieve your athletic goals. I offer scouting services with detailed film evaluations using my advanced NFL-level grading scale to assess your skills. This scouting service is designed to highlight your value to coaches and help them filter through potential recruits. Once evaluated, your profile is added to my prospect board, which is sent out to over 175+ college coaches each week.  As a scout, not a recruiter, my goal is to amplify your exposure to coaches!  </h5> 
              
-         
+            <h6>LEARN MORE</h6>
           
           
             <p class="contact-us">
