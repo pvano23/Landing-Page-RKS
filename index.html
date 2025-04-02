@@ -319,13 +319,22 @@ Date retrieved: [March 22]
 
       .designed-by {
         position: absolute;
-        bottom: 10px;
+        bottom: -800px;
         left: 10px;
         font-family: 'Didact Gothic', serif;
         font-size: 14px;
         color: black;
     }
+      
+      .designed-by a {
+          text-decoration: none;
+          color: black; /* Ensures initial text color is black */
+          transition: color 0.3s ease-in-out;
+      }
 
+      .designed-by a:hover {
+          color: gold; /* Changes color to gold on hover */
+      }
       
     </style>
 </head>
@@ -400,7 +409,7 @@ Date retrieved: [March 22]
           
         <img src="RKS LOGO.png" alt="Ren Kok Scouting Logo" class="bottom-logo">
       
-      <p class="designed-by">Designed by Paige Van Overberghe</p>
+      <p class="designed-by">Designed by Paige Van Overberghe<br><span><a href="mailto:renkokscouting@gmail.com" target="_self" style="text-decoration:none">pjvanove@uwaterloo.ca</a></span></p>
 
      
     </div>
